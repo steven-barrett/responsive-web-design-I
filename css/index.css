@@ -71,53 +71,75 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
-nav {
-	display: flex;		
-	justify-content: space-evenly;	
-	
-}
-h1 {
-    display: flex;
-    flex-direction: column;
-	font-size: 60px;
-    height: 100px;    
-}
-.innovation {
-    display: flex;
-    justify-content: space-around;
-    margin: 50px 0px 0px 0px;
-}
-button {
-    margin: 25px 0px 0px 0px;
-    width: 100px;
-}
+@media (max-width: 800px) {
+    button {
+        width: 100px;
+        height: 30px;
+        background-color: white;
+    }
+    nav {
+        display: flex;		
+        justify-content: space-between;	       
+    }
 
-.middle-img {
-	padding: 15px 0px 15px 0px;
-}
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: lightgrey;
+    }
+    .mobile-hr {
+        visibility: hidden;
+    }
+    .header-img {
+        display: none;
+    }
 
-.division-1 {	
-	float:left;
-	width:50%;
-	overflow:hidden;
-}
-.division-2 {
-	
-	float:left;
-	width:50%;
-	overflow: hidden;
-}
-.division-3 {
-	float:left;
-	width:33.3%	
-}
-.division-4 {
-	float:left;
-	width:33.3%
-}
-.division-5 {
-	float:left;
-	width:33.3%
+    h1 {
+        text-align: center;
+        margin: 0px 0px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;
+    }
+    
+    .innovation {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 0px 0px 0px;
+    }
+    button {
+        margin: 25px 0px 0px 0px;
+        width: 100px;
+    }
+    
+    .middle-img {
+        padding: 15px 0px 15px 0px;
+    }
+    
+    .division-1 {	
+        float:left;
+        width:50%;
+        overflow:hidden;
+    }
+    .division-2 {
+        
+        float:left;
+        width:50%;
+        overflow: hidden;
+    }
+    .division-3 {
+        float:left;
+        width:33.3%	
+    }
+    .division-4 {
+        float:left;
+        width:33.3%
+    }
+    .division-5 {
+        float:left;
+        width:33.3%
+    }
+      
 }
 
 @media (max-width: 500px) {
@@ -127,12 +149,17 @@ button {
         margin: 0px 0px 30px 0px;
     }
     button {
-        background-color: white;
-        margin: 85px 0px 20px 150px;
+        background-color: white;        
+        width: 100px;
+        height: 20px;
+        margin: 0px 0px 0px 160px;
     }
     h1 {
         text-align: center;
         margin: 0px 0px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        font-size: 50px;    
     }
 
     .features-h4 {
@@ -183,6 +210,7 @@ button {
     }
 
     .mobile-hr {
+        visibility: visible;
         width: 100%;
         color: darkgray;
         border-style: solid;
@@ -228,6 +256,7 @@ button {
         text-align: center;
     }
     .section-2 {
+        margin: 20px 0px 0px 0px;
         display: flex;
         flex-direction: column;
     }
@@ -239,61 +268,8 @@ button {
         
 }
 
-/*@media (max-width: 800px) {
-    nav {
-        display: flex;		
-        justify-content: space-between;	       
-    }
-    .mobile-hr {
-        display: none;
-    }
-    .header-img {
-        display: none;
-    }
 
-    h1 {
-        text-align: center;
-        margin: 0px 0px 15px 0px;
-    }
-    .innovation {
-        display: flex;
-        justify-content: space-around;
-        margin: 50px 0px 0px 0px;
-    }
-    button {
-        margin: 25px 0px 0px 0px;
-        width: 100px;
-    }
-    
-    .middle-img {
-        padding: 15px 0px 15px 0px;
-    }
-    
-    .division-1 {	
-        float:left;
-        width:50%;
-        overflow:hidden;
-    }
-    .division-2 {
-        
-        float:left;
-        width:50%;
-        overflow: hidden;
-    }
-    .division-3 {
-        float:left;
-        width:33.3%	
-    }
-    .division-4 {
-        float:left;
-        width:33.3%
-    }
-    .division-5 {
-        float:left;
-        width:33.3%
-    }
-        
-}*/
+
 
 
 
